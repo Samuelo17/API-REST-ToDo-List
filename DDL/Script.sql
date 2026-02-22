@@ -31,9 +31,11 @@ CREATE TABLE CATEGORIA(
     id_categ SERIAL PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL UNIQUE,
     descrip TEXT,
-   color VARCHAR(7),
+    color VARCHAR(7),
     CONSTRAINT chk_color_hex
         CHECK (color ~ '^#[0-9A-Fa-f]{6}$')
+    activo BOOLEAN NOT NULL DEFAULT TRUE;
+    fch_borrado TIMESTAMP DEFAULT NULL;
 );
 
 --TABLA TAREA--
