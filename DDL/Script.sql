@@ -33,9 +33,9 @@ CREATE TABLE CATEGORIA(
     descrip TEXT,
     color VARCHAR(7),
     CONSTRAINT chk_color_hex
-        CHECK (color ~ '^#[0-9A-Fa-f]{6}$')
-    activo BOOLEAN NOT NULL DEFAULT TRUE;
-    fch_borrado TIMESTAMP DEFAULT NULL;
+        CHECK (color ~ '^#[0-9A-Fa-f]{6}$'),
+    activo BOOLEAN NOT NULL DEFAULT TRUE,
+    fch_borrado TIMESTAMP DEFAULT NULL
 );
 
 --TABLA TAREA--
