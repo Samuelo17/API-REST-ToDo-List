@@ -6,6 +6,7 @@ import {DatabaseModule} from './DataBase/database.module';
 import { UsuarioModule } from './Usuario/Usuario.module';
 import { AuthModule } from './Auth/Auth.module';
 import { TareaModule } from './Tarea/Tarea.module';
+import { ComentarioModule } from './Comentario/Comentario.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { TareaModule } from './Tarea/Tarea.module';
     UsuarioModule,
     AuthModule,
     TareaModule,
+    ComentarioModule,
   ],
   controllers: [AppController],
   providers: [AppService],
